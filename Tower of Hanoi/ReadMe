@@ -1,0 +1,43 @@
+Tower of Hanoi Description
+A description of the Tower of Hanoi domain can be found at Wikipedia. In all problems that your program will be tested with there will be five discs (called disk1, disk2, disk3, disk4, disk5) and three pegs (called A, B, C). In all your facts files you will have to include both a common part (defining objects and relations among objects) and a plan-specific part (describing the initial state and goal for each plan). Note that some of the five disks may not appear in some of the planning problems.
+
+The two planning problems you have to solve are:
+
+Problem 1
+
+initial state:
+(on disk1 disk2)
+(on disk2 A) 
+(clear disk1)
+(clear B)
+(clear C) 
+
+goal:
+(on disk1 B)
+(on disk2 C)
+
+Problem 2
+
+initial state:
+(on disk1 disk2) 
+(on disk2 disk3)
+(on disk3 disk4)
+(on disk4 disk5)
+(on disk5 C) 
+(clear disk1) 
+(clear A) 
+(clear B)
+
+goal:
+(on disk1 disk2) 
+(on disk2 disk3)
+(on disk3 disk4)
+(on disk4 disk5)
+(on disk5 A)
+
+
+Tower Of Hanoi-Descriptions for PDDL are follows:
+
+5 Disks : disk1, disk2, disk3, disk4, disk5
+3 Pegs : A, B, C
+(larger disk5 disk1) - disk5 is larger than disk1

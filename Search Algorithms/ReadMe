@@ -4,6 +4,32 @@ STUDENT NAME: VRUSHALI S KADAM
 UTAID: 1001514762
 COURSE: CSE 5360
 
+Problem Statement:
+Implement a search algorithm that can find a route between any two cities. Your program will be called find_route, and will take exactly three commandline arguments, as follows:
+COMMAND TO RUN THE CODE:
+find_route input_filename origin_city destination_city
+
+The program will compute a route between the origin city and the destination city, and will print out both the length of the route and the list of all cities that lie on that route. For example,
+find_route input1.txt Bremen Frankfurt
+
+should have the following:
+
+distance: 455 km
+route:
+Bremen to Dortmund, 234 km
+Dortmund to Frankfurt, 221 km
+
+and
+
+find_route input1.txt London Frankfurt
+
+should have the following output:
+
+distance: infinity
+route:
+none
+
+
 PROGRAMMING LANGUAGE: PYTHON 2.4.3
 
 Functional Module:

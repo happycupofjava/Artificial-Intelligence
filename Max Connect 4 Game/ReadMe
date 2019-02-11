@@ -46,4 +46,33 @@ In this case, the program simply makes a single move and terminates. In particul
     Choose and make the next move.
     Print the current board state and score.
     Save the current board state to the output file IN EXACTLY THE SAME FORMAT THAT IS USED FOR INPUT FILES.
-Exit
+    Exit
+    
+RUNNING THE CODE:
+1) Programming language: Python 2.4
+2)Files:(a)maxconnect4.py- contains the implementation of MinMax algorithm with alpha beta pruning to increase the efficiency of the search along the tree.
+        (b)MaxConnect4game.py- contains the basic functions for setting up the board, counting the score, print the board to files,calculating the utility value and evaluation function.
+3)Functional model:
+    (a)setInitState()- used to intialize the global variables
+    (b)minimaxDecision()- used to implement the minmax algorithm for the min player and max player for a particular game, in this algorithm to avoid an infinite search tree/to limit the exectution time we set a maximum depth limit till which the algorithm can run to take a decision for the move.
+    (c)maxVal() and minVal()-The max values calculates the best possible maximum value for the max player and calls the minVal() to obtain the least lowest value for the min player. At all the leaf nodes a utility value is returned which is considered to be the selection value for its parent node.
+    (d)candidate()- checks the candidates for placing a move(acts as a fringe) holds the possible columns to make a move
+    (e)main()- Implements the two modes; Interactive mode and One-move mode. Both the types further first check if the board is full, if yes a "Board is full" message is displayed. If not, the functions for the two modes call the minmaxDecision() to provide a move.
+    (f)final_verdict()- This function is used to provide the  results of the game.
+    (g)countScoreForEval()-Implemented to calculate the evaluation for the depth limit search.
+4) Running the code:
+For one-move game, type the following command to execute from the command prompt:
+python maxconnect4.py one-move input_file_name output_file_name depth
+
+For interactive game, type the following command to execute from the command prompt:
+python maxconnect4.py interactive input_file_name [computer-next/human-next] depth
+
+(*Note: The arguments are case sensitive*)
+
+
+
+Refrences:
+https://www.youtube.com/watch?v=zp3VMe0Jpf8
+http://www.giocc.com/concise-implementation-of-minimax-through-higher-order-functions.html
+https://roadtolarissa.com/connect-4-ai-how-it-works/
+

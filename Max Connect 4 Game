@@ -47,5 +47,6 @@ In this case, the program simply makes a single move and terminates. In particul
     Print the current board state and score.
     Save the current board state to the output file IN EXACTLY THE SAME FORMAT THAT IS USED FOR INPUT FILES.
     Exit
+    
 
 

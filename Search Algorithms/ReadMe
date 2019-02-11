@@ -1,0 +1,32 @@
+Assignment 1: Programming - Uninformed Search & Informed Search
+
+STUDENT NAME: VRUSHALI S KADAM
+UTAID: 1001514762
+COURSE: CSE 5360
+
+PROGRAMMING LANGUAGE: PYTHON 2.4.3
+
+Functional Module:
+1)main()- * used to read the command line arguments 
+	  * make function calls to the functions implemented to perform graph search, sort the fringe and trace the route in order to obtain the optimal route.
+2)findroute()- * implements the concept of garph search and looks for adjacent nodes.
+	       * Reads the input.txt file and stores the information
+	       * starts off with popping the first candidate from the fringe and checks if it is the goal city. If not, it looks for the the successors and appends to the fringe.
+3)sortfringe()- * implements insertion sorting algorithm on the fringe to implement Uniform cost search. This ensures that the route obtained is the minimal cost route.
+4)traceroute()- * checks the visitednodes list by accepting the visitednides list and start city as parameters.
+		* adds up the route cost for every intermediate node if present.
+
+				
+Running the code:
+1)The input file must be in the same directory.
+2)Use FileZilla to upload the input file and code file on omega.
+3)Login in on omega using; ssh -X <uta_net_id>@omega.uta.edu(cmd)
+4)run the following commands.
+  (a) Type: chmod a+x find_route.py
+  (b) Type: python find_route.py <input_filename.txt> <Source_City> <Destination_City>
+
+
+References:
+https://www.python.org/doc/essays/graphs/
+https://www.youtube.com/watch?v=AaKEW_mVBtg
+http://interactivepython.org/courselib/static/pythonds/SortSearch/TheInsertionSort.html
